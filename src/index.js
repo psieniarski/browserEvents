@@ -23,7 +23,7 @@ const BrowserEvents = ({
 	const on = ({
 	  	selector = '*',
 	  	eventType = 'click',
-	  	fn
+	  	fn = () => { console.warn('on: fn use default callback.') }
 	}) => {
 		const eventsNames = eventType.split(' ');
 
